@@ -26,7 +26,7 @@ header {
 }
 
 .btn {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     min-width: 173px;
@@ -35,9 +35,11 @@ header {
     border: 1.5px solid #143c3c;
     background: #143c3c;
     color: #fff;
+    transition: 0.25s;
 }
 
 .btn:hover {
+    cursor: pointer;
     opacity: 0.9;
 }
 
@@ -51,6 +53,7 @@ header {
 .header--fixed {
     position: sticky;
     top: -8px;
+    z-index: 99;
 }
 .header-top {
     display: flex;
@@ -84,4 +87,142 @@ header {
 
 .header__link--home {
     color: #152427;
+}
+
+/* Hero */
+.hero {
+    margin-top: 60px;
+    font-family: "Public Sans";
+    position: relative;
+}
+
+.hero-body {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero-body::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        #fff 0%,
+        #dddcdc 51.09%,
+        rgba(212, 212, 212, 0) 99.68%
+    );
+}
+
+.hero-body::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 2px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    right: 50%;
+    background: #143c3c;
+}
+
+.hero__heading {
+    width: 368px;
+}
+
+.hero__desc {
+    width: 341px;
+}
+
+.hero-content {
+    margin-right: 76px;
+}
+
+.section__heading {
+    color: #152427;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.section__desc {
+    margin-top: 20px;
+    color: #575d5e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.hero-media {
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.hero-play__btn:hover {
+    opacity: 0.8;
+}
+
+.hero__image {
+    width: 56%;
+    display: flex;
+    gap: 20px;
+    margin-right: 23px;
+    position: relative;
+}
+
+.hero__img {
+    width: 202px;
+    height: 466px;
+}
+
+.hero__img--center {
+    margin-top: 76px;
+}
+
+.hero-decor {
+    position: absolute;
+}
+
+.hero-decor__top {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    margin-top: -32px;
+    margin-left: -200px;
+}
+
+.hero-decor__bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    margin-top: 250px;
+}
+
+.hero-snow--1 {
+    position: relative;
+    margin-right: -39px;
+}
+
+.hero-snow--2 {
+    position: relative;
+    top: -30px;
+    margin-left: -40px;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 20%;
+    bottom: 50%;
+    left: 30%;
+    width: 340px;
+    height: 340px;
+    background: #4dbb9a;
+    filter: blur(150px);
+    z-index: -1;
 }
