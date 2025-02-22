@@ -6,6 +6,82 @@ a {
     text-decoration: none;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
 header {
     font-family: "Public Sans", serif;
+}
+
+/* Common */
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 173px;
+    height: 57px;
+    border-radius: 40px;
+    border: 1.5px solid #143c3c;
+    background: #143c3c;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Header */
+.header {
+    padding-top: 28px;
+    padding-bottom: 20px;
+    background: #fff;
+}
+
+.header--fixed {
+    position: sticky;
+    top: -8px;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    margin-right: 88px;
+}
+
+.header__item-link {
+    padding: 20px;
+    color: #575d5e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+    transition: 0.25s;
+}
+
+.header__item-link:hover {
+    color: #152427;
+    text-decoration: underline;
+}
+
+.header__link--home {
+    color: #152427;
 }
