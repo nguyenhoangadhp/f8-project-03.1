@@ -226,3 +226,27 @@ header {
     filter: blur(150px);
     z-index: -1;
 }
+
+/* Partner */
+
+.partner {
+    margin-top: 126px;
+    background: #e2eddf;
+    border-radius: 999px;
+    padding: 76px 0;
+    margin-bottom: 106px;
+}
+
+.partner__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.partner__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
