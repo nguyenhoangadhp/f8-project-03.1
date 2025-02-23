@@ -93,13 +93,22 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
+
+        <!-- Link font icon awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
     <body>
         <header class="header header--fixed">
             <div class="container">
                 <!-- Header -->
                 <div class="header-top">
-                    <a href="#!">
+                    <a href="#">
                         <img
                             src="./assets/icon/logo.svg"
                             alt=""
@@ -110,19 +119,23 @@
                         <ul class="header__list">
                             <li class="header__item">
                                 <a
-                                    href="#!"
+                                    href="#"
                                     class="header__item-link header__link--home"
                                     >Home</a
                                 >
                             </li>
                             <li class="header__item">
-                                <a href="#!" class="header__item-link">About</a>
+                                <a href="#about" class="header__item-link"
+                                    >About</a
+                                >
                             </li>
                             <li class="header__item">
-                                <a href="#!" class="header__item-link">Blog</a>
+                                <a href="#blog" class="header__item-link"
+                                    >Blog</a
+                                >
                             </li>
                             <li class="header__item">
-                                <a href="#!" class="header__item-link"
+                                <a href="#footer" class="header__item-link"
                                     >Contact</a
                                 >
                             </li>
@@ -381,7 +394,7 @@
                 </div>
 
                 <!-- About -->
-                <div class="about">
+                <div id="about" class="about">
                     <div class="about-body">
                         <div class="about-image">
                             <div class="about-image__decor">
@@ -639,7 +652,7 @@
             </div>
 
             <!-- Blog -->
-            <div class="blog">
+            <div id="blog" class="blog">
                 <div class="container">
                     <!-- Blog top -->
                     <div class="blog-top">
@@ -720,7 +733,86 @@
             </div>
         </div>
     </body>
-    <footer class="footer">
-        <div class="container"></div>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <!-- Footer left -->
+                <div class="footer-left">
+                    <h2 class="footer__heading">Sign up for our newsletter</h2>
+                    <div class="footer-form">
+                        <input
+                            class="footer__input"
+                            placeholder="Enter your email"
+                            type="email"
+                            id="email"
+                            name="email"
+                        />
+                        <a href="#!" class="footer__act">
+                            <img
+                                src="./assets/icon/chevron-right.svg"
+                                alt=""
+                                class="footer__btn"
+                            />
+                        </a>
+                    </div>
+                    <ul class="footer-social">
+                        <a href="#!" class="footer-social__link">
+                            <i
+                                class="footer-social__icon fa-brands fa-facebook-f"
+                            ></i>
+                        </a>
+                        <a href="#!" class="footer-social__link">
+                            <i
+                                class="fa-brands fa-instagram footer-social__icon"
+                            ></i>
+                        </a>
+                        <a href="#!" class="footer-social__link">
+                            <i
+                                class="fa-brands fa-square-twitter footer-social__icon"
+                            ></i>
+                        </a>
+                    </ul>
+                </div>
+
+                <!-- Footer list -->
+                <div class="footer-info">
+                    <div class="footer-list">
+                        <div class="footer-item">
+                            <h3 class="footer-item__heading">Pages</h3>
+                            <a href="#!" class="footer-item__link">Home</a>
+                            <a href="#!" class="footer-item__link">About</a>
+                            <a href="#!" class="footer-item__link">Blog</a>
+                            <a href="#!" class="footer-item__link">Blog Post</a>
+                        </div>
+                        <div class="footer-item">
+                            <h3 class="footer-item__heading">Product</h3>
+                            <a href="#!" class="footer-item__link">Home</a>
+                            <a href="#!" class="footer-item__link">About</a>
+                            <a href="#!" class="footer-item__link">Blog</a>
+                            <a href="#!" class="footer-item__link">Blog Post</a>
+                        </div>
+                        <div class="footer-item">
+                            <h3 class="footer-item__heading">Overview</h3>
+                            <a href="#!" class="footer-item__link">Home1</a>
+                            <a href="#!" class="footer-item__link">Home2</a>
+                            <a href="#!" class="footer-item__link">Home3</a>
+                            <a href="#!" class="footer-item__link">Pricing1</a>
+                        </div>
+                        <div class="footer-item">
+                            <h3 class="footer-item__heading">About us</h3>
+                            <a href="#!" class="footer-item__link">Team</a>
+                            <a href="#!" class="footer-item__link">Investors</a>
+                            <a href="#!" class="footer-item__link">Blog</a>
+                            <a href="#!" class="footer-item__link">Press</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coppyright">
+                <p class="coppyright__desc">
+                    © Copyright 2025 by MODULARS. All right reserved.
+                </p>
+            </div>
+        </div>
     </footer>
 </html>
