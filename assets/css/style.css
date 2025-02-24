@@ -158,18 +158,6 @@ header {
     );
 }
 
-.hero-body::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 2px;
-    position: absolute;
-    top: -60px;
-    left: 50%;
-    right: 50%;
-    background: #143c3c;
-}
-
 .hero__heading {
     width: 368px;
 }
@@ -338,7 +326,7 @@ header {
     transform: rotate(180deg);
 }
 
-.services__content {
+.services-content {
     margin-top: 76px;
 }
 
@@ -349,6 +337,7 @@ header {
 }
 
 .services__item {
+    display: block;
     border-radius: 20px;
     transition: 0.25s;
 }
@@ -503,29 +492,29 @@ header {
 }
 
 .process-list {
+    display: flex;
+    flex-direction: column;
     margin-top: 81px;
+    gap: 10px;
 }
 
 .process-item {
     display: flex;
     align-items: center;
     height: 185px;
-    border-radius: 33px;
+    position: relative;
     padding: 55px 41px 55px 30px;
+    transition: 0.25s;
+    border-bottom: 1px solid #83a17d;
+    border-radius: 33px;
 }
 
-.process-item:first-child {
+.process-item:hover {
+    cursor: pointer;
     background: #e2eddf;
-    position: relative;
 }
 
-.process-item:nth-child(2),
-.process-item:nth-child(3) {
-    position: relative;
-}
-
-.process-item:nth-child(2)::after,
-.process-item:nth-child(3)::after {
+/* .process-item::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -537,7 +526,7 @@ header {
         #83a17d 4.17%,
         rgba(131, 161, 125, 0) 36.46%
     );
-}
+} */
 
 .process__heading {
     width: 477px;
@@ -813,6 +802,7 @@ header {
 }
 
 .blog-item {
+    display: block;
     border-radius: 40px;
     transition: 0.25s;
     background: #fff;
@@ -934,7 +924,7 @@ header {
     opacity: 0.8;
 }
 
-.footer-social {
+.footer-social__list {
     display: flex;
     margin-top: 47px;
     gap: 22px;
@@ -1005,12 +995,14 @@ header {
     color: #6a8383;
     font-family: "Public Sans";
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 2.25;
+    transition: 0.25s;
 }
 
 .footer-item__link:hover {
     text-decoration: underline;
+    color: #fff;
 }
 
 .coppyright {
